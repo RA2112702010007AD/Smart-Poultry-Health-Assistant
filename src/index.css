@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@utility glass-card {
+  background: rgba(253, 253, 251, 0.95);
+  border: 1px solid rgba(217, 224, 219, 0.9);
+  box-shadow: 0 4px 20px -2px rgba(34, 49, 38, 0.04), 0 2px 4px -1px rgba(34, 49, 38, 0.02);
+}
+
+.dark .glass-card {
+  background: rgba(18, 26, 23, 0.94);
+  border: 1px solid rgba(44, 58, 51, 0.6);
+  box-shadow: 0 10px 30px -10px rgba(5, 10, 8, 0.7), 0 1px 3px -1px rgba(5, 10, 8, 0.4);
+}
+
+@utility sensor-font {
+  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+}
+
+@utility gemini-glow {
+  border-left: 4px solid #10b981;
+  background: linear-gradient(90deg, rgba(16, 185, 129, 0.06) 0%, rgba(247, 248, 245, 0) 100%);
+}
+
+.dark .gemini-glow {
+  border-left: 4px solid #10b981;
+  background: linear-gradient(90deg, rgba(16, 185, 129, 0.08) 0%, rgba(18, 26, 23, 0) 100%);
+}
+
+/* Custom Scrollbar for a premium experience */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.4);
+}

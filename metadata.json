@@ -1,0 +1,6 @@
+{
+  "name": "Poultry Guardian AI",
+  "description": "An intelligent poultry health monitoring and disease prediction system using a Random Forest classifier and actionable farmer recommendations powered by Google Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
