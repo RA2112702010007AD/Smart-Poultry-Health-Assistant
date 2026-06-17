@@ -227,7 +227,7 @@ export default function FarmerLogin({ onLoginSuccess, isDarkMode }: FarmerLoginP
   const [pinInput, setPinInput] = useState('');
   const [farmSelect, setFarmSelect] = useState('KA-BARN-09');
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
-  const [lang, setLang] = useState<Language>('kannada');
+  const [lang, setLang] = useState<Language>('english');
 
   const text = TRANSLATIONS[lang];
 
