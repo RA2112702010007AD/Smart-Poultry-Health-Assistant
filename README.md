@@ -3,12 +3,8 @@
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/82cd2c0c-51e6-445f-be83-6d89ce9fc7a9" />
 
 
-# 🐓 FeatherAI PoultryGuard (Poultry Guardian AI)
+# 🐓 Smart Poultry Health AI Assistant (Poultry Guardian AI)
 
-<p align="center">
-  <img width="400" alt="Farmer Login Interface" src="https://github.com/user-attachments/assets/50099a4d-954e-4498-b512-10b21d74dad0" />
-  <img width="500" alt="Farmer Dashboard Diagnostics" src="https://github.com/user-attachments/assets/82cd2c0c-51e6-445f-be83-6d89ce9fc7a9" />
-</p>
 
 FeatherAI PoultryGuard is a state-of-the-art, full-stack precision farming application designed to monitor, analyze, and secure broiler house atmosphere health. It uses a mathematical **Ensemble Random Forest Classifier** combined with **Google Gemini AI** to assess barn risks and deliver real-time, actionable husbandry recommendations to farmers.
 
