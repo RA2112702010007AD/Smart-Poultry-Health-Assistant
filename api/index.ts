@@ -5,8 +5,8 @@ import { GoogleGenAI, Type } from '@google/genai';
 
 dotenv.config();
 
-import { SensorReadings, RiskLevel, MLPrediction, GeminiRecommendations, PredictionRecord } from '../src/types';
-import { RandomForestClassifier, generatePoultryDataset } from '../src/utils/randomForest';
+import { SensorReadings, RiskLevel, MLPrediction, GeminiRecommendations, PredictionRecord } from './types';
+import { RandomForestClassifier, generatePoultryDataset } from './utils/randomForest';
 
 const app = express();
 
