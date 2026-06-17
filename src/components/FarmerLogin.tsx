@@ -351,6 +351,53 @@ export default function FarmerLogin({ onLoginSuccess, isDarkMode }: FarmerLoginP
         
         {/* Left Column: Traditional Diya & warm welcome card */}
         <div className="md:col-span-5 space-y-6 text-center md:text-left">
+          
+          {/* 3D Developer Info Flip Card */}
+          <div className="flip-card w-full h-28 cursor-pointer select-none mb-2">
+            <div className="flip-card-inner">
+              
+              {/* Front Side */}
+              <div className="flip-card-front rounded-2xl border border-[#eedfc6] bg-gradient-to-br from-[#fefaf3] to-[#faf3e3] p-4 flex gap-4 items-center shadow-xs text-left">
+                <div className="w-12 h-12 rounded-xl bg-[#ea580c]/10 border border-[#ea580c]/20 flex items-center justify-center text-xl flex-shrink-0 shadow-inner">
+                  👨‍💻
+                </div>
+                <div className="space-y-1 min-w-0 flex-grow">
+                  <div className="text-[10px] uppercase font-bold tracking-widest text-[#ea580c] flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
+                    Sole Developer & Creator
+                  </div>
+                  <h4 className="font-sans font-black text-sm text-slate-800 tracking-tight leading-tight">
+                    Anurag Das
+                  </h4>
+                  <div className="text-[9px] font-mono text-amber-700 flex items-center gap-1">
+                    <span>🔄</span>
+                    <span>Hover or tap to flip</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Back Side */}
+              <div className="flip-card-back rounded-2xl border border-orange-200 bg-gradient-to-br from-amber-50 to-orange-50 p-4 flex flex-col justify-between shadow-xs text-left">
+                <div className="space-y-1.5">
+                  <div className="text-[9px] uppercase font-extrabold tracking-widest text-[#ea580c]">
+                    Avian PoultryGuard Project
+                  </div>
+                  <div className="text-[11px] font-medium text-slate-700 leading-normal">
+                    Full-Stack AI & IoT Developer
+                  </div>
+                </div>
+                <div className="flex items-center justify-between gap-2 border-t border-dashed border-orange-200 pt-2 mt-1.5 text-[10px] font-mono text-slate-600">
+                  <div className="flex items-center gap-1">
+                    <span>✉️</span>
+                    <span className="select-all hover:underline font-bold text-slate-800">anuragdas.1803@gmail.com</span>
+                  </div>
+                  <span>🇮🇳</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase bg-[#ea580c]/10 text-[#ea580c] dark:bg-[#ea580c]/20 dark:text-[#f97316] border border-[#ea580c]/20">
             <span className="w-2 h-2 rounded-full bg-orange-500 animate-ping" />
             {text.portalHead}
@@ -405,23 +452,7 @@ export default function FarmerLogin({ onLoginSuccess, isDarkMode }: FarmerLoginP
               </div>
             </div>
 
-            {/* Elegant Creator & Developer Card */}
-            <div className="p-3.5 rounded-xl border border-[#eedfc6]/40 dark:border-slate-800 bg-[#fdfdfd]/50 dark:bg-[#111512]/40 backdrop-blur-xs shadow-xs space-y-1 text-left">
-              <div className="text-[10px] uppercase font-bold tracking-widest text-[#ea580c] dark:text-[#f59e0b] flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
-                Primary Project Developer
-              </div>
-              <div className="font-sans font-black text-xs text-slate-800 dark:text-slate-100 flex items-center justify-between">
-                <span>Anurag Das</span>
-                <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded-md bg-[#ea580c]/10 text-[#ea580c] dark:bg-[#f59e0b]/10 dark:text-[#f59e0b]">
-                  Creator
-                </span>
-              </div>
-              <div className="text-[10px] font-mono text-slate-500 dark:text-[#a0b2a6] flex items-center gap-1.5 pt-0.5">
-                <span>✉️</span>
-                <span className="hover:underline select-all">anuragdas.1803@gmail.com</span>
-              </div>
-            </div>
+            {/* Developer Card replaced by premium flipcard at top of column */}
           </div>
         </div>
 

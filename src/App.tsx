@@ -153,12 +153,12 @@ export default function App() {
 
   // Dynamic Dark Mode class on document element
   useEffect(() => {
-    if (isDarkMode) {
+    if (isDarkMode && isLoggedIn) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
-  }, [isDarkMode]);
+  }, [isDarkMode, isLoggedIn]);
 
   // Fetch initial history
   useEffect(() => {
@@ -586,7 +586,7 @@ export default function App() {
   ] : [];
 
   if (!isLoggedIn) {
-    return <FarmerLogin onLoginSuccess={handleLoginSuccess} isDarkMode={isDarkMode} />;
+    return <FarmerLogin onLoginSuccess={handleLoginSuccess} isDarkMode={false} />;
   }
 
   return (
